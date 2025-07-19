@@ -40,29 +40,51 @@ class MyApp extends StatelessWidget {
             SizedBox(height: 50),
             Text("Third Text", style: TextStyle(fontSize: 40)),
             SizedBox(height: 20),
-
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Icon(Icons.add),
-                Icon(Icons.add),
+                Column(
+                  children: [Icon(Icons.add), Icon(Icons.add), Icon(Icons.add)],
+                ),
                 Column(
                   children: [
                     Icon(Icons.add),
-                    Icon(Icons.add),
-                    Icon(Icons.add),
+                    Row(children: [Icon(Icons.add), Icon(Icons.add)]),
                     Row(
                       children: [
                         Icon(Icons.add),
                         Icon(Icons.add),
                         Icon(Icons.add),
+                      ],
+                    ),
+                    Row(children: [Icon(Icons.add), Icon(Icons.add)]),
+                    Icon(Icons.add),
+                  ],
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(Icons.add),
+                    Icon(Icons.add),
+                    Icon(Icons.add),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
                         Icon(Icons.add),
+                        Icon(Icons.add),
+                        Column(
+                          children: [
+                            Icon(Icons.add),
+                            Icon(Icons.add),
+                            Icon(Icons.add),
+                            Icon(Icons.add),
+                          ],
+                        ),
                       ],
                     ),
                   ],
                 ),
-                Icon(Icons.add),
-                Icon(Icons.add),
               ],
             ),
           ],
