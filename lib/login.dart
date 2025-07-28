@@ -85,9 +85,9 @@ class LoginView extends StatelessWidget {
                 return;
               }
               if (!emailController.text.isEmail) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text("Email is not valid.")),
-                );
+                ScaffoldMessenger.of(
+                  context,
+                ).showSnackBar(SnackBar(content: Text("Email is not valid.")));
                 return;
               }
               if (pwdController.text.isEmpty) {
