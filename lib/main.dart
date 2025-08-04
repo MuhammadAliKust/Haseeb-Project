@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:haseeb_project/page_view.dart';
 import 'package:haseeb_project/single_selection.dart';
 
 import 'dynamic_list_view.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DynamicListView(),
+      home: PageViewDemo(),
       // home: Scaffold(
       //   appBar: AppBar(
       //     backgroundColor: Colors.blue,
