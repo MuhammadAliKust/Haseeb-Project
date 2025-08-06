@@ -3,6 +3,7 @@ import 'package:haseeb_project/page_view.dart';
 import 'package:haseeb_project/single_selection.dart';
 
 import 'dynamic_list_view.dart';
+import 'grid_view.dart';
 import 'list_view_demo.dart';
 import 'login.dart';
 import 'multiple_selection.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PageViewDemo(),
+      home: GridViewDemo(),
       // home: Scaffold(
       //   appBar: AppBar(
       //     backgroundColor: Colors.blue,
