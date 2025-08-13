@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:haseeb_project/page_view.dart';
 import 'package:haseeb_project/single_selection.dart';
+import 'package:haseeb_project/tabbar_demo.dart';
 
 import 'bottom_bar.dart';
 import 'dynamic_list_view.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomBarDemo(),
+      home: TabbarDemoDemo(),
       // home: Scaffold(
       //   appBar: AppBar(
       //     backgroundColor: Colors.blue,
