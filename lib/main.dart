@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:haseeb_project/page_view.dart';
+import 'package:haseeb_project/providers/user_provider.dart';
+import 'package:haseeb_project/screen_a.dart';
 import 'package:haseeb_project/single_selection.dart';
 import 'package:haseeb_project/tabbar_demo.dart';
+import 'package:provider/provider.dart';
 
 import 'bottom_bar.dart';
 import 'bottom_sheet.dart';
@@ -13,7 +16,12 @@ import 'login.dart';
 import 'multiple_selection.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MultiProvider(
+      providers: [ChangeNotifierProvider(create: (context) => UserProvider())],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -22,7 +30,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomSheetDemo(),
+      home: ScreenAView(),
       // home: Scaffold(
       //   appBar: AppBar(
       //     backgroundColor: Colors.blue,
